@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OBSB — Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      :root {
+        --ink: #111110;
+        --ink-2: #444441;
+        --ink-3: #888885;
+        --paper: #f5f4ef;
+        --accent: #c84b2f;
+        --border: #ddddd8;
+        --link: #2557a7;
+      }
+
+      body {
+        background: var(--paper);
+        color: var(--ink);
+        font-family: 'DM Sans', system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.7;
+        min-height: 100vh;
+      }
+
+      header {
+        border-bottom: 1px solid var(--border);
+        padding: 1.5rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      .logo {
+        font-family: 'DM Serif Display', Georgia, serif;
+        font-size: 1.3rem;
+        color: var(--ink);
+        text-decoration: none;
+        letter-spacing: -0.02em;
+      }
+
+      .logo span { color: var(--accent); }
+
+      nav { display: flex; gap: 1.5rem; }
+      nav a {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--ink-2);
+        text-decoration: none;
+        padding-bottom: 2px;
+        border-bottom: 1px solid transparent;
+        transition: color 0.15s, border-color 0.15s;
+      }
+      nav a:hover { color: var(--ink); border-color: var(--ink); }
+      nav a.active { color: var(--ink); border-color: var(--accent); }
+
+      main {
+        max-width: 48rem;
+        margin: 0 auto;
+        padding: 3rem 2rem 5rem;
+      }
+
+      .doc-header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+      .doc-label {
+        font-size: 0.78rem;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 0.75rem;
+      }
+      h1 {
+        font-family: 'DM Serif Display', Georgia, serif;
+        font-size: clamp(2rem, 4vw, 2.75rem);
+        line-height: 1.15;
+        letter-spacing: -0.03em;
+        color: var(--ink);
+        margin-bottom: 1rem;
+      }
+      .meta { font-size: 0.875rem; color: var(--ink-3); }
+
+      h2 {
+        font-family: 'DM Serif Display', Georgia, serif;
+        font-size: 1.2rem;
+        color: var(--ink);
+        margin: 2.5rem 0 0.75rem;
+        letter-spacing: -0.01em;
+      }
+
+      h2::before {
+        display: inline-block;
+        content: counter(section) ". ";
+        counter-increment: section;
+        color: var(--accent);
+        font-size: 0.9rem;
+        margin-right: 0.25rem;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 500;
+      }
+
+      article { counter-reset: section; }
+
+      p { margin-bottom: 1rem; color: var(--ink-2); }
+
+      ul {
+        margin: 0.5rem 0 1rem 0;
+        padding-left: 0;
+        list-style: none;
+      }
+
+      li {
+        position: relative;
+        padding-left: 1.25rem;
+        margin-bottom: 0.6rem;
+        color: var(--ink-2);
+      }
+
+      li::before {
+        content: "–";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-weight: 500;
+      }
+
+      a { color: var(--link); text-underline-offset: 2px; }
+      a:hover { color: var(--accent); }
+
+      .callout {
+        background: white;
+        border: 1px solid var(--border);
+        border-left: 3px solid var(--accent);
+        border-radius: 0 6px 6px 0;
+        padding: 1rem 1.25rem;
+        margin: 1.5rem 0;
+        font-size: 0.9rem;
+        color: var(--ink-2);
+      }
+
+      code {
+        font-family: 'SF Mono', 'Fira Code', monospace;
+        font-size: 0.82em;
+        background: white;
+        border: 1px solid var(--border);
+        padding: 0.1em 0.4em;
+        border-radius: 3px;
+        color: var(--accent);
+      }
+
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 1.5rem 2rem;
+        text-align: center;
+        font-size: 0.8rem;
+        color: var(--ink-3);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      footer a { color: var(--ink-3); text-decoration: none; }
+      footer a:hover { color: var(--ink); }
+
+      @media (max-width: 540px) {
+        header { padding: 1rem; flex-wrap: wrap; }
+        main { padding: 2rem 1.25rem 4rem; }
+        footer { flex-direction: column; text-align: center; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">OBS<span>B</span></a>
+      <nav>
+        <a href="privacy.html" class="active">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="doc-header">
+        <div class="doc-label">Legal</div>
+        <h1>Privacy Policy</h1>
+        <p class="meta">Last updated: May 2026</p>
+      </div>
+
+      <article>
+        <div class="callout">
+          OBSB is designed with privacy first. Recordings are processed entirely on your device. We do not operate a cloud backend for your videos, and we do not sell your data.
+        </div>
+
+        <h2>Information We Collect</h2>
+        <p>OBSB collects minimal information to function:</p>
+        <ul>
+          <li><strong>Google account profile</strong> — your name and email address, only if you sign in with Google. Used to identify your session and label uploads.</li>
+          <li><strong>Recording metadata</strong> — file names, sizes, and timestamps stored locally in the extension's storage to display your recording history.</li>
+          <li><strong>No analytics or tracking</strong> — we do not embed third-party analytics, telemetry SDKs, or ad networks in the extension.</li>
+        </ul>
+
+        <h2>How Recordings Are Processed</h2>
+        <p>All screen, microphone, and camera capture happens locally in your browser using the standard Web APIs (<code>MediaRecorder</code>, <code>getDisplayMedia</code>). Video data is never sent to OBSB servers.</p>
+        <p>If you choose to upload a recording, it is sent directly to <strong>your own Google Drive account</strong> via Google's APIs. OBSB does not receive, proxy, or store a copy of the video file.</p>
+
+        <h2>Google Drive Access</h2>
+        <p>When you sign in with Google, OBSB requests the <code>drive.file</code> OAuth scope. This grants OBSB permission to:</p>
+        <ul>
+          <li>Create new files in your Google Drive (recordings you upload).</li>
+          <li>Read and delete only the files OBSB itself created — not your other Drive content.</li>
+        </ul>
+        <p>You can revoke this access at any time in your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer">Google Account permissions</a> or by signing out inside OBSB.</p>
+
+        <h2>Data Sharing</h2>
+        <p>We do not sell, rent, or trade your personal data. The only third-party service involved is Google (for sign-in and Drive uploads), which is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google's Privacy Policy</a>.</p>
+        <p>Shareable links you generate point to files in <em>your</em> Google Drive. You control who has access to those links.</p>
+
+        <h2>Local Storage</h2>
+        <p>OBSB uses Chrome's <code>chrome.storage.local</code> API to store your preferences and recording history on your device. This data stays on your machine and is not transmitted to us.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>OBSB is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this policy occasionally. The "Last updated" date at the top will reflect any changes. Continued use of OBSB after changes constitutes acceptance of the updated policy.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about this policy? Open an issue in the <a href="https://github.com/YOUR_USERNAME/obsb-privacy" target="_blank" rel="noreferrer">GitHub repository</a> or email us at <a href="mailto:privacy@obsb.app">privacy@obsb.app</a>.</p>
+      </article>
+    </main>
+
+    <footer>
+      <span>© 2026 OBSB</span>
+      <span>
+        <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+        <a href="terms.html">Terms and Conditions</a>
+      </span>
+    </footer>
+  </body>
+</html>

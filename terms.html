@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OBSB — Terms and Conditions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      :root {
+        --ink: #111110;
+        --ink-2: #444441;
+        --ink-3: #888885;
+        --paper: #f5f4ef;
+        --accent: #c84b2f;
+        --border: #ddddd8;
+        --link: #2557a7;
+      }
+
+      body {
+        background: var(--paper);
+        color: var(--ink);
+        font-family: 'DM Sans', system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.7;
+        min-height: 100vh;
+      }
+
+      header {
+        border-bottom: 1px solid var(--border);
+        padding: 1.5rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      .logo {
+        font-family: 'DM Serif Display', Georgia, serif;
+        font-size: 1.3rem;
+        color: var(--ink);
+        text-decoration: none;
+        letter-spacing: -0.02em;
+      }
+
+      .logo span { color: var(--accent); }
+
+      nav { display: flex; gap: 1.5rem; }
+      nav a {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--ink-2);
+        text-decoration: none;
+        padding-bottom: 2px;
+        border-bottom: 1px solid transparent;
+        transition: color 0.15s, border-color 0.15s;
+      }
+      nav a:hover { color: var(--ink); border-color: var(--ink); }
+      nav a.active { color: var(--ink); border-color: var(--accent); }
+
+      main {
+        max-width: 48rem;
+        margin: 0 auto;
+        padding: 3rem 2rem 5rem;
+      }
+
+      .doc-header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+      .doc-label {
+        font-size: 0.78rem;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 0.75rem;
+      }
+      h1 {
+        font-family: 'DM Serif Display', Georgia, serif;
+        font-size: clamp(2rem, 4vw, 2.75rem);
+        line-height: 1.15;
+        letter-spacing: -0.03em;
+        color: var(--ink);
+        margin-bottom: 1rem;
+      }
+      .meta { font-size: 0.875rem; color: var(--ink-3); }
+
+      h2 {
+        font-family: 'DM Serif Display', Georgia, serif;
+        font-size: 1.2rem;
+        color: var(--ink);
+        margin: 2.5rem 0 0.75rem;
+        letter-spacing: -0.01em;
+      }
+
+      h2::before {
+        display: inline-block;
+        content: counter(section) ". ";
+        counter-increment: section;
+        color: var(--accent);
+        font-size: 0.9rem;
+        margin-right: 0.25rem;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 500;
+      }
+
+      article { counter-reset: section; }
+
+      p { margin-bottom: 1rem; color: var(--ink-2); }
+
+      ul {
+        margin: 0.5rem 0 1rem 0;
+        padding-left: 0;
+        list-style: none;
+      }
+
+      li {
+        position: relative;
+        padding-left: 1.25rem;
+        margin-bottom: 0.6rem;
+        color: var(--ink-2);
+      }
+
+      li::before {
+        content: "–";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-weight: 500;
+      }
+
+      a { color: var(--link); text-underline-offset: 2px; }
+      a:hover { color: var(--accent); }
+
+      code {
+        font-family: 'SF Mono', 'Fira Code', monospace;
+        font-size: 0.82em;
+        background: white;
+        border: 1px solid var(--border);
+        padding: 0.1em 0.4em;
+        border-radius: 3px;
+        color: var(--accent);
+      }
+
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 1.5rem 2rem;
+        text-align: center;
+        font-size: 0.8rem;
+        color: var(--ink-3);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      footer a { color: var(--ink-3); text-decoration: none; }
+      footer a:hover { color: var(--ink); }
+
+      @media (max-width: 540px) {
+        header { padding: 1rem; flex-wrap: wrap; }
+        main { padding: 2rem 1.25rem 4rem; }
+        footer { flex-direction: column; text-align: center; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">OBS<span>B</span></a>
+      <nav>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html" class="active">Terms</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="doc-header">
+        <div class="doc-label">Legal</div>
+        <h1>Terms and Conditions</h1>
+        <p class="meta">Last updated: May 2026</p>
+      </div>
+
+      <article>
+        <p>By installing or using the OBSB browser extension ("OBSB", "we", "the extension"), you agree to these Terms and Conditions. If you do not agree, do not use OBSB.</p>
+
+        <h2>What OBSB Does</h2>
+        <p>OBSB lets you record your screen, microphone, and camera locally in your browser. If you sign in with Google, you may upload recordings to your own Google Drive and create shareable links.</p>
+
+        <h2>Google Account and Google Drive</h2>
+        <ul>
+          <li>Sign-in uses your Google account. You grant OBSB permission to access your basic profile (name, email) and to create and manage files in Google Drive that OBSB uploads (<code>drive.file</code> scope — only files created by OBSB).</li>
+          <li>Recordings are stored in your Google Drive account under your control.</li>
+          <li>You can revoke access anytime in your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer">Google Account permissions</a> or by signing out in OBSB.</li>
+        </ul>
+
+        <h2>Your Responsibilities</h2>
+        <ul>
+          <li>Do not record or share content you do not have the right to record or distribute.</li>
+          <li>Comply with applicable laws and the policies of sites you record.</li>
+          <li>You are responsible for who you share Drive links with.</li>
+        </ul>
+
+        <h2>Privacy</h2>
+        <p>OBSB processes recordings on your device. When you upload to Google Drive, data is sent to Google's services under <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google's privacy policy</a>. We do not operate a separate OBSB cloud backend for your videos.</p>
+
+        <h2>Disclaimer</h2>
+        <p>OBSB is provided "as is" without warranties of any kind. We are not liable for loss of data, failed uploads, or misuse of shared links. Use at your own risk.</p>
+
+        <h2>Changes</h2>
+        <p>We may update these terms. Continued use of OBSB after changes means you accept the updated terms. The "Last updated" date at the top of this page reflects the most recent revision.</p>
+      </article>
+    </main>
+
+    <footer>
+      <span>© 2026 OBSB</span>
+      <span>
+        <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+        <a href="terms.html">Terms and Conditions</a>
+      </span>
+    </footer>
+  </body>
+</html>
